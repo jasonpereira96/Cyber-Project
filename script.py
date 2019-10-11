@@ -11,7 +11,7 @@ tuples = soup.findAll(type = "tuple")
 jobs = []
 print(len(tuples))
 # print(tuples)
-
+# change
 # tuple1 = tuples[0]
 # print(type(tuples[0]))
 for tuple1 in tuples: 
