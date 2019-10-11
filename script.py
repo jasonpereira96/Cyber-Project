@@ -18,8 +18,8 @@ for tuple1 in tuples:
 
     jobDetails = {}
     # title
-    title = tuple1.find(class_ = 'desig')['title']
-    jobDetails['title'] = title
+    # title = tuple1.find(class_ = 'desig')['title']
+    # jobDetails['title'] = title
     # desig
     desig = tuple1.find(class_ = 'desig').find('a').string
     jobDetails['desig'] = desig
@@ -45,3 +45,6 @@ for tuple1 in tuples:
 # print(tags[0].findAll(class_ = 'desig')[0].contents)
 
 print(json.dumps(jobs, sort_keys=True, indent=4))
+
+with open('jobs.json', 'w') as fp:
+    fp.write(json.dumps(jobs, sort_keys=True, indent=4))
