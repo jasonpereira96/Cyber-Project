@@ -15,7 +15,7 @@ print(len(tuples))
 # tuple1 = tuples[0]
 # print(type(tuples[0]))
 for tuple1 in tuples: 
-
+    # print(tuple1)
     jobDetails = {}
     # title
     # title = tuple1.find(class_ = 'desig')['title']
@@ -39,12 +39,36 @@ for tuple1 in tuples:
     # more desc
     # on hold
     # print(tuple1.find(class_ = 'more desc').)
+
+    # exp
+    exp = tuple1.find(class_ = 'exp', recursive=True)
+    # print(exp)
+    if exp is not None:
+        # print(exp.contents[1])
+        jobDetails['exp'] = exp.contents[1]
+
+    # salary
+    salary = tuple1.find(class_ = 'salary', recursive=True)
+    if salary is not None:
+        # print(str(salary.contents))
+        print(salary.contents[-1])
+        jobDetails['salary'] = str(salary.contents[-1])
+
+    skill = tuple1.find(class_ = 'skill', recursive=True)
+    if skill is not None:
+        jobDetails['skillset'] = str(skill.contents[0])
+
+    
+        
+
+
+
     jobs.append(jobDetails)
 
 # print(tuples[0].findAll(class_ = 'desig')[0].find('a').contents)
 # print(tags[0].findAll(class_ = 'desig')[0].contents)
 
-print(json.dumps(jobs, sort_keys=True, indent=4))
+# print(json.dumps(jobs, sort_keys=True, indent=4))
 
 with open('jobs.json', 'w') as fp:
     fp.write(json.dumps(jobs, sort_keys=True, indent=4))
