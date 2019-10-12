@@ -14,26 +14,26 @@ print(len(tuples))
 # change
 # tuple1 = tuples[0]
 # print(type(tuples[0]))
-for tuple1 in tuples: 
+for tuple_ in tuples: 
     # print(tuple1)
     jobDetails = {}
     # title
     # title = tuple1.find(class_ = 'desig')['title']
     # jobDetails['title'] = title
     # desig
-    desig = tuple1.find(class_ = 'desig').find('a').string
+    desig = tuple_.find(class_ = 'desig').find('a').string
     jobDetails['desig'] = desig
 
 
     # url
-    url = tuple1.find(class_ = 'desig').find('a')['href']
+    url = tuple_.find(class_ = 'desig').find('a')['href']
     jobDetails['url'] = url
     # org
-    org = tuple1.find(class_ = 'org').string
+    org = tuple_.find(class_ = 'org').string
     jobDetails['org'] = org
 
     # loc
-    loc = tuple1.find(class_ = 'loc').find('span').string
+    loc = tuple_.find(class_ = 'loc').find('span').string
     jobDetails['loc'] = loc
 
     # more desc
@@ -41,20 +41,20 @@ for tuple1 in tuples:
     # print(tuple1.find(class_ = 'more desc').)
 
     # exp
-    exp = tuple1.find(class_ = 'exp', recursive=True)
+    exp = tuple_.find(class_ = 'exp', recursive=True)
     # print(exp)
     if exp is not None:
         # print(exp.contents[1])
         jobDetails['exp'] = exp.contents[1]
 
     # salary
-    salary = tuple1.find(class_ = 'salary', recursive=True)
+    salary = tuple_.find(class_ = 'salary', recursive=True)
     if salary is not None:
         # print(str(salary.contents))
         print(salary.contents[-1])
         jobDetails['salary'] = str(salary.contents[-1])
 
-    skill = tuple1.find(class_ = 'skill', recursive=True)
+    skill = tuple_.find(class_ = 'skill', recursive=True)
     if skill is not None:
         jobDetails['skillset'] = str(skill.contents[0])
 
