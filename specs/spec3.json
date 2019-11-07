@@ -1,13 +1,1969 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
-  "data": {
-    "values": [{"avgSalary":550000,"lowerExp":5,"avgExp":5.5},{"avgSalary":3250000,"lowerExp":15,"avgExp":20},{"avgSalary":450000,"lowerExp":1,"avgExp":2},{"avgSalary":650000,"lowerExp":5,"avgExp":6.5},{"avgSalary":550000,"lowerExp":3,"avgExp":3.5},{"avgSalary":3250000,"lowerExp":2,"avgExp":4.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":1100000,"lowerExp":5,"avgExp":6.5},{"avgSalary":275000,"lowerExp":0,"avgExp":1},{"avgSalary":650000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1500000,"lowerExp":6,"avgExp":8},{"avgSalary":500000,"lowerExp":1,"avgExp":2.5},{"avgSalary":450000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":4,"avgExp":5.5},{"avgSalary":650000,"lowerExp":2,"avgExp":3},{"avgSalary":600000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1150000,"lowerExp":6,"avgExp":7},{"avgSalary":6250000,"lowerExp":5,"avgExp":7.5},{"avgSalary":275000,"lowerExp":2,"avgExp":4.5},{"avgSalary":800000,"lowerExp":5,"avgExp":7},{"avgSalary":1500000,"lowerExp":5,"avgExp":7.5},{"avgSalary":387500,"lowerExp":3,"avgExp":5.5},{"avgSalary":2250000,"lowerExp":10,"avgExp":12.5},{"avgSalary":300000,"lowerExp":0,"avgExp":1.5},{"avgSalary":450000,"lowerExp":3,"avgExp":4.5},{"avgSalary":450000,"lowerExp":3,"avgExp":5.5},{"avgSalary":750000,"lowerExp":5,"avgExp":7.5},{"avgSalary":175000,"lowerExp":1,"avgExp":2},{"avgSalary":187500,"lowerExp":0,"avgExp":1.5},{"avgSalary":225000,"lowerExp":1,"avgExp":1.5},{"avgSalary":600000,"lowerExp":5,"avgExp":7.5},{"avgSalary":75000,"lowerExp":2,"avgExp":4.5},{"avgSalary":850000,"lowerExp":5,"avgExp":7.5},{"avgSalary":525000,"lowerExp":5,"avgExp":6.5},{"avgSalary":47500,"lowerExp":2,"avgExp":4.5},{"avgSalary":950000,"lowerExp":4,"avgExp":5.5},{"avgSalary":1050000,"lowerExp":6,"avgExp":8},{"avgSalary":500000,"lowerExp":2,"avgExp":4.5},{"avgSalary":500000,"lowerExp":2,"avgExp":4.5},{"avgSalary":95000,"lowerExp":7,"avgExp":9.5},{"avgSalary":97500,"lowerExp":7,"avgExp":9.5},{"avgSalary":95000,"lowerExp":3,"avgExp":5.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":650000,"lowerExp":2,"avgExp":4.5},{"avgSalary":3750000,"lowerExp":2,"avgExp":4.5},{"avgSalary":1500000,"lowerExp":4,"avgExp":6},{"avgSalary":750000,"lowerExp":5,"avgExp":7.5},{"avgSalary":97500,"lowerExp":3,"avgExp":4.5},{"avgSalary":2750000,"lowerExp":10,"avgExp":12.5},{"avgSalary":1875000,"lowerExp":5,"avgExp":7.5},{"avgSalary":500000,"lowerExp":2,"avgExp":3},{"avgSalary":300000,"lowerExp":0,"avgExp":1},{"avgSalary":300000,"lowerExp":0,"avgExp":1},{"avgSalary":1400000,"lowerExp":2,"avgExp":4.5},{"avgSalary":3750000,"lowerExp":3,"avgExp":5.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":2750000,"lowerExp":12,"avgExp":14.5},{"avgSalary":3750000,"lowerExp":10,"avgExp":15},{"avgSalary":1300000,"lowerExp":6,"avgExp":8.5},{"avgSalary":1150000,"lowerExp":5,"avgExp":7.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":5000,"lowerExp":5,"avgExp":7.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":1000000,"lowerExp":2,"avgExp":4.5},{"avgSalary":900000,"lowerExp":5,"avgExp":7.5},{"avgSalary":750000,"lowerExp":3,"avgExp":4},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":1500000,"lowerExp":10,"avgExp":14.5},{"avgSalary":2500000,"lowerExp":8,"avgExp":10.5},{"avgSalary":2750000,"lowerExp":8,"avgExp":10.5},{"avgSalary":850000,"lowerExp":3,"avgExp":4.5},{"avgSalary":500000,"lowerExp":2,"avgExp":3},{"avgSalary":362500,"lowerExp":1,"avgExp":2},{"avgSalary":2000000,"lowerExp":4,"avgExp":6},{"avgSalary":97500,"lowerExp":3,"avgExp":4.5},{"avgSalary":1125000,"lowerExp":5,"avgExp":7.5},{"avgSalary":175000,"lowerExp":3,"avgExp":5.5},{"avgSalary":137500,"lowerExp":0,"avgExp":1},{"avgSalary":3500000,"lowerExp":15,"avgExp":17.5},{"avgSalary":950000,"lowerExp":5,"avgExp":6.5},{"avgSalary":null,"lowerExp":17,"avgExp":21.5},{"avgSalary":112500,"lowerExp":0,"avgExp":0},{"avgSalary":1000000,"lowerExp":3,"avgExp":5.5},{"avgSalary":250000,"lowerExp":0,"avgExp":0.5},{"avgSalary":1100000,"lowerExp":3,"avgExp":3.5},{"avgSalary":1200000,"lowerExp":6,"avgExp":8.5},{"avgSalary":2000000,"lowerExp":5,"avgExp":6},{"avgSalary":2000000,"lowerExp":10,"avgExp":13.5},{"avgSalary":1900000,"lowerExp":10,"avgExp":13},{"avgSalary":1350000,"lowerExp":4,"avgExp":5},{"avgSalary":1000000,"lowerExp":2,"avgExp":4.5},{"avgSalary":3000000,"lowerExp":12,"avgExp":16},{"avgSalary":2625000,"lowerExp":8,"avgExp":10.5},{"avgSalary":387500,"lowerExp":2,"avgExp":4.5},{"avgSalary":1100000,"lowerExp":5,"avgExp":7.5},{"avgSalary":2750000,"lowerExp":10,"avgExp":12.5},{"avgSalary":600000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1250000,"lowerExp":5,"avgExp":7.5},{"avgSalary":600000,"lowerExp":3,"avgExp":5.5},{"avgSalary":2250000,"lowerExp":15,"avgExp":20},{"avgSalary":975000,"lowerExp":3,"avgExp":4},{"avgSalary":3000000,"lowerExp":8,"avgExp":10.5},{"avgSalary":425000,"lowerExp":10,"avgExp":12.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":2750000,"lowerExp":12,"avgExp":14.5},{"avgSalary":3250000,"lowerExp":13,"avgExp":18},{"avgSalary":2750000,"lowerExp":13,"avgExp":16.5},{"avgSalary":1500000,"lowerExp":10,"avgExp":12.5},{"avgSalary":2300000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1400000,"lowerExp":5,"avgExp":7.5},{"avgSalary":750000,"lowerExp":5,"avgExp":6.5},{"avgSalary":1500000,"lowerExp":4,"avgExp":6.5},{"avgSalary":2625000,"lowerExp":5,"avgExp":7.5},{"avgSalary":750000,"lowerExp":5,"avgExp":6.5},{"avgSalary":1700000,"lowerExp":7,"avgExp":9.5},{"avgSalary":1600000,"lowerExp":7,"avgExp":9.5},{"avgSalary":2750000,"lowerExp":10,"avgExp":14.5},{"avgSalary":2250000,"lowerExp":8,"avgExp":10.5},{"avgSalary":1400000,"lowerExp":8,"avgExp":10.5},{"avgSalary":850000,"lowerExp":5,"avgExp":6.5},{"avgSalary":1875000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":0,"avgExp":2.5},{"avgSalary":525000,"lowerExp":3,"avgExp":4},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":700000,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":0,"avgExp":2.5},{"avgSalary":700000,"lowerExp":0,"avgExp":2.5},{"avgSalary":700000,"lowerExp":0,"avgExp":2.5},{"avgSalary":700000,"lowerExp":0,"avgExp":2.5},{"avgSalary":700000,"lowerExp":0,"avgExp":2.5},{"avgSalary":662500,"lowerExp":0,"avgExp":2.5},{"avgSalary":875000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1700000,"lowerExp":10,"avgExp":12.5},{"avgSalary":1700000,"lowerExp":8,"avgExp":10.5},{"avgSalary":425000,"lowerExp":2,"avgExp":4.5},{"avgSalary":1050000,"lowerExp":3,"avgExp":4.5},{"avgSalary":450000,"lowerExp":1,"avgExp":2},{"avgSalary":950000,"lowerExp":5,"avgExp":6},{"avgSalary":900000,"lowerExp":8,"avgExp":10.5},{"avgSalary":5500000,"lowerExp":18,"avgExp":23},{"avgSalary":1125000,"lowerExp":5,"avgExp":7.5},{"avgSalary":750000,"lowerExp":3,"avgExp":4.5},{"avgSalary":412500,"lowerExp":1,"avgExp":2},{"avgSalary":1325000,"lowerExp":4,"avgExp":6},{"avgSalary":950000,"lowerExp":3,"avgExp":5},{"avgSalary":425000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1800000,"lowerExp":12,"avgExp":14},{"avgSalary":1900000,"lowerExp":3,"avgExp":5},{"avgSalary":1000000,"lowerExp":4,"avgExp":6.5},{"avgSalary":900000,"lowerExp":5,"avgExp":7.5},{"avgSalary":87500,"lowerExp":0,"avgExp":0.5},{"avgSalary":1900000,"lowerExp":10,"avgExp":12.5},{"avgSalary":337500,"lowerExp":3,"avgExp":4},{"avgSalary":475000,"lowerExp":2,"avgExp":4},{"avgSalary":850000,"lowerExp":4,"avgExp":6.5},{"avgSalary":97500,"lowerExp":3,"avgExp":4.5},{"avgSalary":700000,"lowerExp":1,"avgExp":2},{"avgSalary":1750000,"lowerExp":10,"avgExp":15},{"avgSalary":450000,"lowerExp":1,"avgExp":2.5},{"avgSalary":450000,"lowerExp":1,"avgExp":3.5},{"avgSalary":475000,"lowerExp":3,"avgExp":4},{"avgSalary":600000,"lowerExp":3,"avgExp":4},{"avgSalary":600000,"lowerExp":3,"avgExp":5.5},{"avgSalary":850000,"lowerExp":3,"avgExp":5},{"avgSalary":1500000,"lowerExp":12,"avgExp":13.5},{"avgSalary":725000,"lowerExp":4,"avgExp":5.5},{"avgSalary":1150000,"lowerExp":5,"avgExp":7.5},{"avgSalary":600000,"lowerExp":3,"avgExp":5.5},{"avgSalary":700000,"lowerExp":8,"avgExp":10.5},{"avgSalary":225000,"lowerExp":2,"avgExp":4.5},{"avgSalary":600000,"lowerExp":5,"avgExp":7.5},{"avgSalary":362500,"lowerExp":3,"avgExp":5.5},{"avgSalary":450000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1200000,"lowerExp":5,"avgExp":6},{"avgSalary":1200000,"lowerExp":4,"avgExp":6},{"avgSalary":525000,"lowerExp":1,"avgExp":3.5},{"avgSalary":2250000,"lowerExp":10,"avgExp":14},{"avgSalary":200000,"lowerExp":1,"avgExp":2},{"avgSalary":1100000,"lowerExp":6,"avgExp":7.5},{"avgSalary":750000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1000000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1750000,"lowerExp":12,"avgExp":15},{"avgSalary":1050000,"lowerExp":5,"avgExp":7.5},{"avgSalary":400000,"lowerExp":3,"avgExp":5.5},{"avgSalary":500000,"lowerExp":2,"avgExp":4.5},{"avgSalary":1500000,"lowerExp":6,"avgExp":8.5},{"avgSalary":450000,"lowerExp":10,"avgExp":12.5},{"avgSalary":750000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1100000,"lowerExp":6,"avgExp":8.5},{"avgSalary":650000,"lowerExp":4,"avgExp":6.5},{"avgSalary":325000,"lowerExp":3,"avgExp":4},{"avgSalary":300000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1450000,"lowerExp":10,"avgExp":13},{"avgSalary":1100000,"lowerExp":4,"avgExp":5.5},{"avgSalary":3500000,"lowerExp":10,"avgExp":12.5},{"avgSalary":1600000,"lowerExp":3,"avgExp":5},{"avgSalary":1300000,"lowerExp":7,"avgExp":9.5},{"avgSalary":475000,"lowerExp":5,"avgExp":6},{"avgSalary":275000,"lowerExp":0,"avgExp":1},{"avgSalary":1100000,"lowerExp":7,"avgExp":9.5},{"avgSalary":537500,"lowerExp":3,"avgExp":4},{"avgSalary":262500,"lowerExp":1,"avgExp":3.5},{"avgSalary":850000,"lowerExp":5,"avgExp":7.5},{"avgSalary":350000,"lowerExp":0,"avgExp":2.5},{"avgSalary":300000,"lowerExp":2,"avgExp":3},{"avgSalary":275000,"lowerExp":4,"avgExp":5.5},{"avgSalary":425000,"lowerExp":3,"avgExp":4},{"avgSalary":1050000,"lowerExp":5,"avgExp":7.5},{"avgSalary":400000,"lowerExp":3,"avgExp":4.5},{"avgSalary":null,"lowerExp":0,"avgExp":0},{"avgSalary":180000,"lowerExp":2,"avgExp":4},{"avgSalary":1350000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1250000,"lowerExp":9,"avgExp":10.5},{"avgSalary":1150000,"lowerExp":4,"avgExp":6},{"avgSalary":900000,"lowerExp":8,"avgExp":10},{"avgSalary":1300000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1400000,"lowerExp":7,"avgExp":9.5},{"avgSalary":1000000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1000000,"lowerExp":2,"avgExp":4.5},{"avgSalary":1650000,"lowerExp":5,"avgExp":6.5},{"avgSalary":1500000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1200000,"lowerExp":8,"avgExp":10.5},{"avgSalary":1050000,"lowerExp":5,"avgExp":7},{"avgSalary":2750000,"lowerExp":7,"avgExp":9.5},{"avgSalary":450000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1750000,"lowerExp":7,"avgExp":9.5},{"avgSalary":250000,"lowerExp":2,"avgExp":3.5},{"avgSalary":187500,"lowerExp":0,"avgExp":1},{"avgSalary":200000,"lowerExp":1,"avgExp":3},{"avgSalary":300000,"lowerExp":3,"avgExp":4},{"avgSalary":600000,"lowerExp":3,"avgExp":5.5},{"avgSalary":800000,"lowerExp":5,"avgExp":7},{"avgSalary":850000,"lowerExp":3,"avgExp":5.5},{"avgSalary":6750000,"lowerExp":2,"avgExp":4.5},{"avgSalary":350000,"lowerExp":2,"avgExp":2.5},{"avgSalary":550000,"lowerExp":0,"avgExp":2.5},{"avgSalary":1600000,"lowerExp":5,"avgExp":7},{"avgSalary":425000,"lowerExp":5,"avgExp":6.5},{"avgSalary":750000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1200000,"lowerExp":6,"avgExp":8.5},{"avgSalary":1000000,"lowerExp":5,"avgExp":7.5},{"avgSalary":750000,"lowerExp":6,"avgExp":8.5},{"avgSalary":20000,"lowerExp":3,"avgExp":4.5},{"avgSalary":250000,"lowerExp":1,"avgExp":2},{"avgSalary":850000,"lowerExp":3,"avgExp":5.5},{"avgSalary":212500,"lowerExp":0,"avgExp":1},{"avgSalary":800000,"lowerExp":4,"avgExp":6.5},{"avgSalary":400000,"lowerExp":3,"avgExp":5},{"avgSalary":7000000,"lowerExp":15,"avgExp":17.5},{"avgSalary":550000,"lowerExp":3,"avgExp":5.5},{"avgSalary":2500000,"lowerExp":8,"avgExp":10},{"avgSalary":2150000,"lowerExp":10,"avgExp":12.5},{"avgSalary":1000075607.5,"lowerExp":0,"avgExp":0.5},{"avgSalary":1500000,"lowerExp":8,"avgExp":10},{"avgSalary":70000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1000000,"lowerExp":4,"avgExp":6.5},{"avgSalary":1700000,"lowerExp":8,"avgExp":10.5},{"avgSalary":850000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1200000,"lowerExp":5,"avgExp":6.5},{"avgSalary":1350000,"lowerExp":6,"avgExp":8.5},{"avgSalary":137500,"lowerExp":0,"avgExp":1},{"avgSalary":550000,"lowerExp":3,"avgExp":4},{"avgSalary":3750000,"lowerExp":10,"avgExp":12.5},{"avgSalary":300000,"lowerExp":1,"avgExp":3},{"avgSalary":500000,"lowerExp":3,"avgExp":4.5},{"avgSalary":2000000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1150000,"lowerExp":8,"avgExp":9},{"avgSalary":1200000,"lowerExp":7,"avgExp":9.5},{"avgSalary":487500,"lowerExp":1,"avgExp":3},{"avgSalary":1250000,"lowerExp":6,"avgExp":7},{"avgSalary":1200000,"lowerExp":4,"avgExp":6.5},{"avgSalary":212500,"lowerExp":0,"avgExp":0.5},{"avgSalary":262500,"lowerExp":3,"avgExp":5},{"avgSalary":2125000,"lowerExp":6,"avgExp":7.5},{"avgSalary":1500000,"lowerExp":4,"avgExp":6.5},{"avgSalary":337500,"lowerExp":4,"avgExp":6},{"avgSalary":675000,"lowerExp":5,"avgExp":6.5},{"avgSalary":350000,"lowerExp":1,"avgExp":3.5},{"avgSalary":725000,"lowerExp":8,"avgExp":10.5},{"avgSalary":350000,"lowerExp":4,"avgExp":5},{"avgSalary":1100000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1125000,"lowerExp":7,"avgExp":8.5},{"avgSalary":35000,"lowerExp":2,"avgExp":4.5},{"avgSalary":375000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1350000,"lowerExp":5,"avgExp":6.5},{"avgSalary":800000,"lowerExp":3,"avgExp":4.5},{"avgSalary":450000,"lowerExp":2,"avgExp":3.5},{"avgSalary":3250000,"lowerExp":10,"avgExp":15},{"avgSalary":2550000,"lowerExp":15,"avgExp":20},{"avgSalary":1250000,"lowerExp":6,"avgExp":7.5},{"avgSalary":900000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1450000,"lowerExp":4,"avgExp":5.5},{"avgSalary":850000,"lowerExp":3,"avgExp":4.5},{"avgSalary":375000,"lowerExp":5,"avgExp":7.5},{"avgSalary":875000,"lowerExp":9,"avgExp":11.5},{"avgSalary":2750000,"lowerExp":6,"avgExp":8.5},{"avgSalary":675000,"lowerExp":6,"avgExp":6.5},{"avgSalary":212500,"lowerExp":0,"avgExp":0.5},{"avgSalary":2750000,"lowerExp":10,"avgExp":11.5},{"avgSalary":1100000,"lowerExp":3,"avgExp":4.5},{"avgSalary":1450000,"lowerExp":9,"avgExp":11},{"avgSalary":212500,"lowerExp":1,"avgExp":2},{"avgSalary":925000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1800000,"lowerExp":10,"avgExp":12.5},{"avgSalary":1000000,"lowerExp":4,"avgExp":6.5},{"avgSalary":650000,"lowerExp":5,"avgExp":7.5},{"avgSalary":4500000,"lowerExp":12,"avgExp":15},{"avgSalary":3750000,"lowerExp":12,"avgExp":16},{"avgSalary":1500000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1250000,"lowerExp":6,"avgExp":8.5},{"avgSalary":1100000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1050000,"lowerExp":1,"avgExp":3.5},{"avgSalary":1350000,"lowerExp":5,"avgExp":6},{"avgSalary":1300000,"lowerExp":6,"avgExp":8.5},{"avgSalary":1875000,"lowerExp":8,"avgExp":10},{"avgSalary":1875000,"lowerExp":8,"avgExp":10},{"avgSalary":1275000,"lowerExp":6,"avgExp":7},{"avgSalary":2875000,"lowerExp":7,"avgExp":9.5},{"avgSalary":1250000,"lowerExp":9,"avgExp":11},{"avgSalary":2125000,"lowerExp":2,"avgExp":4.5},{"avgSalary":1700000,"lowerExp":6,"avgExp":8},{"avgSalary":650000,"lowerExp":5,"avgExp":6.5},{"avgSalary":2150000,"lowerExp":10,"avgExp":15},{"avgSalary":95000,"lowerExp":6,"avgExp":8.5},{"avgSalary":95000,"lowerExp":7,"avgExp":9.5},{"avgSalary":550000,"lowerExp":2,"avgExp":4},{"avgSalary":95000,"lowerExp":7,"avgExp":9.5},{"avgSalary":95000,"lowerExp":7,"avgExp":9.5},{"avgSalary":95000,"lowerExp":7,"avgExp":9.5},{"avgSalary":92500,"lowerExp":7,"avgExp":9.5},{"avgSalary":325000,"lowerExp":1,"avgExp":2},{"avgSalary":75000,"lowerExp":2,"avgExp":4.5},{"avgSalary":350000,"lowerExp":2,"avgExp":3},{"avgSalary":3750000,"lowerExp":10,"avgExp":15},{"avgSalary":1100000,"lowerExp":4,"avgExp":5.5},{"avgSalary":97500,"lowerExp":8,"avgExp":10.5},{"avgSalary":187500,"lowerExp":0,"avgExp":0.5},{"avgSalary":1650000,"lowerExp":3,"avgExp":5.5},{"avgSalary":650000,"lowerExp":3,"avgExp":4.5},{"avgSalary":850000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1000000,"lowerExp":3,"avgExp":4},{"avgSalary":2225000,"lowerExp":10,"avgExp":14},{"avgSalary":90000,"lowerExp":7,"avgExp":9.5},{"avgSalary":1200000,"lowerExp":5,"avgExp":6.5},{"avgSalary":325000,"lowerExp":0,"avgExp":1},{"avgSalary":1100000,"lowerExp":10,"avgExp":12.5},{"avgSalary":650000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1000000,"lowerExp":4,"avgExp":6.5},{"avgSalary":900000,"lowerExp":4,"avgExp":6},{"avgSalary":900000,"lowerExp":5,"avgExp":7.5},{"avgSalary":2750000,"lowerExp":10,"avgExp":14},{"avgSalary":175000,"lowerExp":0,"avgExp":0.5},{"avgSalary":1300000,"lowerExp":4,"avgExp":6.5},{"avgSalary":500000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1700000,"lowerExp":6,"avgExp":8.5},{"avgSalary":1500000,"lowerExp":7,"avgExp":9.5},{"avgSalary":1900000,"lowerExp":5,"avgExp":7.5},{"avgSalary":1050000,"lowerExp":4,"avgExp":6},{"avgSalary":1325000,"lowerExp":6,"avgExp":7.5},{"avgSalary":1500000,"lowerExp":4,"avgExp":6.5},{"avgSalary":225000,"lowerExp":3,"avgExp":5.5},{"avgSalary":725000,"lowerExp":3,"avgExp":5.5},{"avgSalary":1700000,"lowerExp":4,"avgExp":6.5},{"avgSalary":7350003.5,"lowerExp":10,"avgExp":12.5},{"avgSalary":387500,"lowerExp":0,"avgExp":2.5},{"avgSalary":775000,"lowerExp":2,"avgExp":3.5},{"avgSalary":1200000,"lowerExp":6,"avgExp":8.5},{"avgSalary":5250000,"lowerExp":11,"avgExp":14.5}]
-  },
-  "transform": [{"filter": "datum.avgSalary < 3500000"}],
-  "mark": "point",
-  "encoding": {
-    "x": {"field": "lowerExp", "type": "quantitative"},
-    "y": {"field": "avgSalary", "type": "quantitative"}
-  }
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "data": {
+        "values": [
+            {
+                "avgSalary": 550000,
+                "lowerExp": 5,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 3250000,
+                "lowerExp": 15,
+                "avgExp": 20
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 550000,
+                "lowerExp": 3,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 3250000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 275000,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 6,
+                "avgExp": 8
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 1,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 2,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1150000,
+                "lowerExp": 6,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 6250000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 275000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 800000,
+                "lowerExp": 5,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 387500,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 2250000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 0,
+                "avgExp": 1.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 175000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 187500,
+                "lowerExp": 0,
+                "avgExp": 1.5
+            },
+            {
+                "avgSalary": 225000,
+                "lowerExp": 1,
+                "avgExp": 1.5
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 75000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 47500,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 950000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 6,
+                "avgExp": 8
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 97500,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 97500,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 1875000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 1400000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 12,
+                "avgExp": 14.5
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 10,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 1300000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 1150000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 5000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 10,
+                "avgExp": 14.5
+            },
+            {
+                "avgSalary": 2500000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 362500,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 2000000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 97500,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1125000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 175000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 137500,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 3500000,
+                "lowerExp": 15,
+                "avgExp": 17.5
+            },
+            {
+                "avgSalary": 950000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": null,
+                "lowerExp": 17,
+                "avgExp": 21.5
+            },
+            {
+                "avgSalary": 112500,
+                "lowerExp": 0,
+                "avgExp": 0
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 250000,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 3,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 2000000,
+                "lowerExp": 5,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 2000000,
+                "lowerExp": 10,
+                "avgExp": 13.5
+            },
+            {
+                "avgSalary": 1900000,
+                "lowerExp": 10,
+                "avgExp": 13
+            },
+            {
+                "avgSalary": 1350000,
+                "lowerExp": 4,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 3000000,
+                "lowerExp": 12,
+                "avgExp": 16
+            },
+            {
+                "avgSalary": 2625000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 387500,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 2250000,
+                "lowerExp": 15,
+                "avgExp": 20
+            },
+            {
+                "avgSalary": 975000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 3000000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 425000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 12,
+                "avgExp": 14.5
+            },
+            {
+                "avgSalary": 3250000,
+                "lowerExp": 13,
+                "avgExp": 18
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 13,
+                "avgExp": 16.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 2300000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1400000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 2625000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 1600000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 10,
+                "avgExp": 14.5
+            },
+            {
+                "avgSalary": 2250000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 1400000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1875000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 662500,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 875000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 425000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 950000,
+                "lowerExp": 5,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 5500000,
+                "lowerExp": 18,
+                "avgExp": 23
+            },
+            {
+                "avgSalary": 1125000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 412500,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 1325000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 950000,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 425000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1800000,
+                "lowerExp": 12,
+                "avgExp": 14
+            },
+            {
+                "avgSalary": 1900000,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 87500,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 1900000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 337500,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 475000,
+                "lowerExp": 2,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 97500,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 1750000,
+                "lowerExp": 10,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 1,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 1,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 475000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 12,
+                "avgExp": 13.5
+            },
+            {
+                "avgSalary": 725000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1150000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 700000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 225000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 362500,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 5,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 525000,
+                "lowerExp": 1,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 2250000,
+                "lowerExp": 10,
+                "avgExp": 14
+            },
+            {
+                "avgSalary": 200000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 6,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1750000,
+                "lowerExp": 12,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 400000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 325000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1450000,
+                "lowerExp": 10,
+                "avgExp": 13
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 3500000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 1600000,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 1300000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 475000,
+                "lowerExp": 5,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 275000,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 537500,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 262500,
+                "lowerExp": 1,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 350000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 2,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 275000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 425000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 400000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": null,
+                "lowerExp": 0,
+                "avgExp": 0
+            },
+            {
+                "avgSalary": 180000,
+                "lowerExp": 2,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 1350000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 9,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 1150000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 8,
+                "avgExp": 10
+            },
+            {
+                "avgSalary": 1300000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1400000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1650000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 5,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1750000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 250000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 187500,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 200000,
+                "lowerExp": 1,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 600000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 800000,
+                "lowerExp": 5,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 6750000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 350000,
+                "lowerExp": 2,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 550000,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 1600000,
+                "lowerExp": 5,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 425000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 750000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 20000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 250000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 212500,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 800000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 400000,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 7000000,
+                "lowerExp": 15,
+                "avgExp": 17.5
+            },
+            {
+                "avgSalary": 550000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 2500000,
+                "lowerExp": 8,
+                "avgExp": 10
+            },
+            {
+                "avgSalary": 2150000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 1000075607.5,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 8,
+                "avgExp": 10
+            },
+            {
+                "avgSalary": 70000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 1350000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 137500,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 550000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 300000,
+                "lowerExp": 1,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 2000000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1150000,
+                "lowerExp": 8,
+                "avgExp": 9
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 487500,
+                "lowerExp": 1,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 6,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 212500,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 262500,
+                "lowerExp": 3,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 2125000,
+                "lowerExp": 6,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 337500,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 675000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 350000,
+                "lowerExp": 1,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 725000,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 350000,
+                "lowerExp": 4,
+                "avgExp": 5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1125000,
+                "lowerExp": 7,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 35000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 375000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1350000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 800000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 450000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 3250000,
+                "lowerExp": 10,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 2550000,
+                "lowerExp": 15,
+                "avgExp": 20
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 6,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1450000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 375000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 875000,
+                "lowerExp": 9,
+                "avgExp": 11.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 675000,
+                "lowerExp": 6,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 212500,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 10,
+                "avgExp": 11.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1450000,
+                "lowerExp": 9,
+                "avgExp": 11
+            },
+            {
+                "avgSalary": 212500,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 925000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1800000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 4500000,
+                "lowerExp": 12,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 12,
+                "avgExp": 16
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 1,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1350000,
+                "lowerExp": 5,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 1300000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 1875000,
+                "lowerExp": 8,
+                "avgExp": 10
+            },
+            {
+                "avgSalary": 1875000,
+                "lowerExp": 8,
+                "avgExp": 10
+            },
+            {
+                "avgSalary": 1275000,
+                "lowerExp": 6,
+                "avgExp": 7
+            },
+            {
+                "avgSalary": 2875000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 1250000,
+                "lowerExp": 9,
+                "avgExp": 11
+            },
+            {
+                "avgSalary": 2125000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 6,
+                "avgExp": 8
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 2150000,
+                "lowerExp": 10,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 550000,
+                "lowerExp": 2,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 95000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 92500,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 325000,
+                "lowerExp": 1,
+                "avgExp": 2
+            },
+            {
+                "avgSalary": 75000,
+                "lowerExp": 2,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 350000,
+                "lowerExp": 2,
+                "avgExp": 3
+            },
+            {
+                "avgSalary": 3750000,
+                "lowerExp": 10,
+                "avgExp": 15
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 4,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 97500,
+                "lowerExp": 8,
+                "avgExp": 10.5
+            },
+            {
+                "avgSalary": 187500,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 1650000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 3,
+                "avgExp": 4.5
+            },
+            {
+                "avgSalary": 850000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 3,
+                "avgExp": 4
+            },
+            {
+                "avgSalary": 2225000,
+                "lowerExp": 10,
+                "avgExp": 14
+            },
+            {
+                "avgSalary": 90000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 5,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 325000,
+                "lowerExp": 0,
+                "avgExp": 1
+            },
+            {
+                "avgSalary": 1100000,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 650000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1000000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 900000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 2750000,
+                "lowerExp": 10,
+                "avgExp": 14
+            },
+            {
+                "avgSalary": 175000,
+                "lowerExp": 0,
+                "avgExp": 0.5
+            },
+            {
+                "avgSalary": 1300000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 500000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 7,
+                "avgExp": 9.5
+            },
+            {
+                "avgSalary": 1900000,
+                "lowerExp": 5,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1050000,
+                "lowerExp": 4,
+                "avgExp": 6
+            },
+            {
+                "avgSalary": 1325000,
+                "lowerExp": 6,
+                "avgExp": 7.5
+            },
+            {
+                "avgSalary": 1500000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 225000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 725000,
+                "lowerExp": 3,
+                "avgExp": 5.5
+            },
+            {
+                "avgSalary": 1700000,
+                "lowerExp": 4,
+                "avgExp": 6.5
+            },
+            {
+                "avgSalary": 7350003.5,
+                "lowerExp": 10,
+                "avgExp": 12.5
+            },
+            {
+                "avgSalary": 387500,
+                "lowerExp": 0,
+                "avgExp": 2.5
+            },
+            {
+                "avgSalary": 775000,
+                "lowerExp": 2,
+                "avgExp": 3.5
+            },
+            {
+                "avgSalary": 1200000,
+                "lowerExp": 6,
+                "avgExp": 8.5
+            },
+            {
+                "avgSalary": 5250000,
+                "lowerExp": 11,
+                "avgExp": 14.5
+            }
+        ]
+    },
+    "transform": [
+        {
+            "filter": "datum.avgSalary < 3500000"
+        }
+    ],
+    "mark": "point",
+    "encoding": {
+        "x": {
+            "field": "lowerExp",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "avgSalary",
+            "type": "quantitative"
+        }
+    }
 }
