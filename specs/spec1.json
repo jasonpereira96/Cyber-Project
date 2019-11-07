@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data" :{
+      "values" :[]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y" : {
+      "aggregate" : "count"
+    },
+    "x": {"field": "location", "type": "nominal"}
+  }
+}
